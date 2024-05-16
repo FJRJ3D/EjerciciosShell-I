@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+
+
+
+
+
+
+
+
+#Un script que nos pida la fecha de nacimiento y nos diga la edad que tiene el usuario en el momento que se ejecute el script.
