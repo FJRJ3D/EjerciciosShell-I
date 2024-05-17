@@ -9,7 +9,7 @@ sleep 3
 ls
 
 while [ "$question" != "si" ]; do
-    read -p "¿Desea borrar un archivo? " question
+    read -p "¿Desea borrar un archivo? (si/no) " question
 
     if [ $question = "si" ]; then
             read -p "Nombre archivo: " nombre
