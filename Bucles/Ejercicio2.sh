@@ -1,17 +1,20 @@
 #!/bin/bash
 
-
-read -p "Crear archivo" $touch archivo.txt
+read -p "Crear archivo: " archivo
+touch $archivo
+echo "Se ha creado el archivo: " $archivo
 sleep 3
 ls
+read -p "¿Desea borrar un archivo? " question
 
-
-
-
-
-
-
-
+if  [ "$question" = "si" ]; then
+        read -p "Nombre archivo: " nombre
+        read -p "Formato: " formato
+        echo "Archivo encontrado y borrado";
+        rm $nombre$formato
+else
+        echo "Ok, no borraremos ningún archivo";
+fi
 
 #Hacer un script que:
 #Mediante un input podamos agregar un archivo (nos de un mensaje de confirmación)
