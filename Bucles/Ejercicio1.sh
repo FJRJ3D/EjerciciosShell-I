@@ -13,9 +13,8 @@ while [ $valor -ne $pid_actual ]; do
         intentos=$((intentos + 1))
         echo "$valor no es un valor númerico"
         read -p "Ingrese un valor: " valor
-#--------------------------------------------------------------
     done
-
+#--------------------------------------------------------------
     if [ $valor -gt $pid_actual ]; then
             echo "Estas ingresando un valor mayor al PID actual"
         elif [ $valor -ne $pid_actual ]; then
