@@ -5,7 +5,16 @@ intentos=0
 valor=0
 
 while [ $valor -ne $pid_actual ]; do
+    
     read -p "Ingrese un valor: " valor
+#Bucle que decide si es un valor numerico o no-----------------
+    while [[ ! $valor =~ ^[0-9]+$ ]]; do
+        
+        intentos=$((intentos + 1))
+        echo "$valor no es un valor númerico"
+        read -p "Ingrese un valor: " valor
+#--------------------------------------------------------------
+    done
 
     if [ $valor -gt $pid_actual ]; then
             echo "Estas ingresando un valor mayor al PID actual"
