@@ -12,7 +12,7 @@ while [ "$question" != "si" ]; do
     
     read -p "¿Desea borrar un archivo? (si/no) " question
 
-    if [ $question = si ]; then
+    if [ "$question" = "si" ]; then
             read -p "Nombre archivo: " nombre
             read -p "Formato: " formato
             if [ -e $nombre$formato ]; then
@@ -21,7 +21,7 @@ while [ "$question" != "si" ]; do
                 else
                     echo "El archivo no existe"
             fi
-        elif [ $question = no ]; then
+        elif [ "$question" = "no" ]; then
             echo "Ok, no borraremos ningún archivo"
             question=si
         else
