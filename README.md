@@ -30,7 +30,7 @@ En este ejercicio he creado un **input** para ingresar el valor númerico y si n
 ## Sustitución de Comandos
 
 ### Ejercicio1
-En este ejercicio he creado una **variable** con el **comando** para averiguar quien está logueado, luego con un **input** comparo con una **condicional** compruebo si ambos nombres coinciden. Si ambos coinciden entonches con un **echo** se imprime un texto de bienvenida, si no son iguales se imprime un Error.
+En este ejercicio primero he creado 3 **variables** con la fecha actual separada en dia, mes y año, despues un **input** para introducir la fecha de nacimiento en formato YYYY-MM-DD, si no se ingresa una fecha en este formando se entra en un **bucle** que te da un **echo** con un error y un **input** para introducir la fecha de nuevo. Despues he creado 3 **variables** con la fecha ingresada del usuario dividida en año, mes y dia. Se resta el año actual al de nacimiento y luego mediante una **condicional** se decide si el mes actual es menor que el del usuario y lo mismo para el dia, para ver si hay que restarle 1 año a la resta original del año, dando como resultado la edad del usuario en ese momento.
 
 ## Bucles
 
